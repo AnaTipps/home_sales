@@ -1,5 +1,8 @@
 # Big-Data  Challenge Home Sales Analysis 
 
+![image](https://github.com/AnaTipps/home_sales/assets/131827518/ec2f364e-f28a-40e2-b1f4-34e73604f16c)
+
+
 ## Background 
 
 In this challenge is required the use of of SparkSQL to determine key metrics about home sales data. Sparkwill be another tool will support in the creation of temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
@@ -34,15 +37,15 @@ Read the `home_sales_revised.csv` data code into a Spark DataFrame.
 
 * Run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
 
+  ### Compare Run Times on Query 4 (q4)
+
+   * Uncache Runtime: 0.6964857578277588 seconds
+   
+   * Cached Runtime: 0.4450709819793701 seconds
+   
+   * Runtime with the parquet DataFrame: 0.48825621604919434 seconds 
+
+
 * Uncache the home_sales temporary table.
 
 * Verify that the home_sales temporary table is uncached using PySpark.
-
-`
-# Compare Run Times on Query 4 (q4)
-
-* Uncache Runtime: 0.6964857578277588 seconds
-
-* Cached Runtime: 0.4450709819793701 seconds
-
-* Runtime with the parquet DataFrame: 0.48825621604919434 seconds`
